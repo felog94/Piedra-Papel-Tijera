@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Piedra, Papel o Tijera</h1>
+
+        <div class="score-board">
+            <div id="player-score" class="score">
+                Jugador: <span id="player-score-value">0</span>
+            </div>
+            <div id="computer-score" class="score">
+                Computadora: <span id="computer-score-value">0</span>
+            </div>
+        </div>
+
+        <p id="result-message" class="message">¡Elige tu jugada!</p>
+
+        <div class="choices">
+            <button id="rock" class="choice-btn">
+                ✊ Piedra
+            </button>
+            <button id="paper" class="choice-btn">
+                ✋ Papel
+            </button>
+            <button id="scissors" class="choice-btn">
+                ✌️ Tijera
+            </button>
+        </div>
+
+        <div class="display-choices">
+            <div class="display-player">
+                <p>Tu elección:</p>
+                <div id="player-display-choice" class="display-box">?</div>
+            </div>
+            <div class="display-computer">
+                <p>Elección de la Computadora:</p>
+                <div id="computer-display-choice" class="display-box">?</div>
+            </div>
+        </div>
+
+        <button id="reset-button" class="reset-btn">Reiniciar Juego</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
